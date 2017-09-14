@@ -614,6 +614,22 @@ namespace WindowsFormsApp7
 
         }
 
-        
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void convertToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Enabled = false;
+            binaryconverter f2 = new binaryconverter();
+            f2.ShowDialog();
+            this.Enabled = true;
+        }
     }
 }
